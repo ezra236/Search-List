@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Searchable Countries List</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.search-container {
+  width: 300px;
+}
+
+#search {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#country-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#country-list li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+#country-list li:hover {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+  </style>
+</head>
+<body>
+  <div class="search-container">
+    <input type="text" id="search" placeholder="Search for a country...">
+    <ul id="country-list">
+      <!-- Country list items will be dynamically generated here -->
+    </ul>
+  </div>
+  <script src="sc.js"></script>
+</body>
+</html>
